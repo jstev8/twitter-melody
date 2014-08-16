@@ -13,11 +13,10 @@ circuit: speaker
 //speaker pin
 int speakerPin = 8;
 
-//notes in the melody
-int melody[] = {
-  NOTE_C4, NOTE_G3,NOTE_G3, NOTE_A3, NOTE_G3,0, NOTE_B3, NOTE_C4};
+//notes
+int notes[] = {NOTE_G4, NOTE_D4, NOTE_A4};
 //Note durations: 4 = quarter note, 8 = eighth note, etc
-int noteDurations[] = { 4, 8, 8, 4, 4, 4, 4, 4 };
+int noteDurations[] = { 4, 4, 2, 4 };
 
 void setup(){
   pinMode(speakerPin, OUTPUT);
@@ -32,13 +31,13 @@ void loop(){
   int val = Serial.read() - '0';
   
   if (val == 1){
-    //Start melody
-    Serial.println("Speaker is On");
+    //Start Tune
+    Serial.println("Tune is On");
     for (int thisNote = 0; thisNote < 8; thisNote++){
       //calculate note duration
       //e.g. quarter note = 1000/4, eighth note = 1000/8
       int noteDuration = 1000/noteDurations[thisNote];
-      tone(8, melody[thisNote], noteDuration);
+      tone(8, notes[thisNote], noteDuration);
       
       int pauseBetweenNotes = noteDuration * 1.30;
       delay(pauseBetweenNotes);
@@ -47,7 +46,7 @@ void loop(){
     }
       delay(1000);
   } else if (val == 0) {
-      Serial.println("Melody is Off");
+      Serial.println("Tune is Off");
       digitalWrite(speakerPin, LOW);
       delay(1000);
   }else {
