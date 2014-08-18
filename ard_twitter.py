@@ -7,7 +7,7 @@ from tweepy import Stream
 from tweepy import OAuthHandler
 from tweepy.streaming import StreamListener
 import time
-import serial
+import serial 
 
 #make sure to change these keys according to your keys----------------------------------
 ckey =    #ADD YOUR CONSUMER KEY
