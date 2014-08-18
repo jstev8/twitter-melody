@@ -11,10 +11,12 @@ http://www.instructables.com/id/Twitter-Mood-Light-The-Worlds-Mood-in-a-Box/
 
 <h3> Using Code</h3>
 <p> Make sure to add your own 
+<ul>
 	<li>Consumer Key</li>
 	<li>Consumer Secret</li>
 	<li>Access Key</li>
 	<li>Access Secret</li>
+</ul>
 </p>
 <p> Check the port that your Arduino is using and add that port to the file 
 ard_twitter.py in line 21</p>
