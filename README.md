@@ -9,12 +9,12 @@ Feel free to play around and change this to suit your own needs. This is only me
 Some useful projects with Twitter: 
 http://www.instructables.com/id/Twitter-Mood-Light-The-Worlds-Mood-in-a-Box/
 
-<h1> Using Code</h1>
+<h3> Using Code</h3>
 <p> Make sure to add your own 
-	<ul>Consumer Key</ul>
-	<ul>Consumer Secret</ul>
-	<ul>Access Key</ul>
-	<ul>Access Secret</ul>
+	<li>Consumer Key</li>
+	<li>Consumer Secret</li>
+	<li>Access Key</li>
+	<li>Access Secret</li>
 </p>
 <p> Check the port that your Arduino is using and add that port to the file 
 ard_twitter.py in line 21</p>
