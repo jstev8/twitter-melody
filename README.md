@@ -25,6 +25,17 @@
 	Check the port that your Arduino is using and add that port to the file 
 	ard_twitter.py in line 21
 </p>
+<p>
+	Upload the Arduino code 
+</p>
+<p>
+	Run the python file on command line
+</p>
+<p> You may need to wait for some time before a melody starts playing. Remember that you will only hear
+    the sound when there is a tweet that matches the parameters. To get fast responses try common words or trending 
+    phrases.
+</p>
+
 
 </body>
 </html>
