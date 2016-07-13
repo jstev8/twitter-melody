@@ -1,6 +1,6 @@
 <html>
 <head>
-	<title> <h3> Basic Arduino with Twitter API</h3></title>
+	<title>Basic Arduino with Twitter API</title>
 </head>
 <body>
 <p>
